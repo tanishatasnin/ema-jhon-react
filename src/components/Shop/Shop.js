@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import react , { components}  from 'react';
 import Cart from '../Cart/Cart';
 import Product from '../Product/Product';
 import { addToDb, getStoredCart } from '../../utilities/fakedb';
@@ -51,7 +52,7 @@ const Shop = () => {
     }
 
     return (
-        <>
+        <div>
             <div className="search-container">
                 <input
                     type="text"
@@ -73,7 +74,7 @@ const Shop = () => {
                     <Cart cart={cart}></Cart>
                 </div>
             </div>
-        </>
+        </div>
     );
 };
 
